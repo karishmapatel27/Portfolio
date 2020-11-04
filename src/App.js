@@ -11,6 +11,9 @@ function App() {
   return (
     <Router>
       <Home />
+      <About />
+      <Projects />
+      <Contact />
     </Router>
   );
 }
