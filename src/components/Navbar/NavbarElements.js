@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
-// import { Link as LinkS} from 'react-scroll'
+import { Link as LinkS } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
-  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,34 +41,49 @@ export const NavLogo = styled(LinkR)`
   text-decoration: none;
 `
 
-  // export const NavLink = styled(Link)`
-  //   color: #fff;
-  //   display: flex;
-  //   align-items: center;
-  //   text-decoration: none;
-  //   padding: 0 1rem;
-  //   height: 100%;
-  //   cursor: pointer; 
+export const MobileIcon = styled.div`
+  display: none;
 
-  //   &.active{
-  //     color: #15cdfc;
-  //   }
-  // `
+  @media screen and (max-width: 768px){
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`
 
-  // export const Bars = styled(FaBars)`
-  //   display: none;
-  //   color: #fff;
+export const NavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
 
-  // @media screen and (max-width: 768px){
-  //   display: block;
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   transform: translate(-100%, 75%);
-  //   font-size: 1.8rem;
-  //   cursor: pointer;
-  // }
+  @media screen and (max-width: 768px){
+    display: none; 
+  }
+`
 
+export const NavItem = styled.li`
+  height: 80px;
+`
+
+export const NavLinks = styled(LinkS)`
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer; 
+
+    &.active{
+      border-bottom: 3px solid green;
+    }
+  `
 
 
 
