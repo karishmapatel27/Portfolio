@@ -41,6 +41,11 @@ export const NavLogo = styled(LinkR)`
   text-decoration: none;
 `
 
+export const Span = styled.span`
+  color: crimson;
+  transition: all 0.3s ease;
+`
+
 export const MobileIcon = styled.div`
   display: none;
 
