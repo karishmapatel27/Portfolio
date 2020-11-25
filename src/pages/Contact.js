@@ -14,7 +14,6 @@ const Contact = () => {
     e.target.reset()
   }
 
-
   return (
     <section className="contact" id="contact">
       <div className="max-width">

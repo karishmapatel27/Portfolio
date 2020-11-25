@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import Sidebar from '../components/Navbar/Sidebar'
 import Navbar from '../components/Navbar/Navbar'
-import HeroSection from "../components/HeroSection"
+import HeroSection from "./HeroSection"
 import About from './About'
 import Contact from './Contact'
 import Footer from '../components/Footer'
+import Projects from './Projects'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,6 +20,7 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <About />
+      <Projects />
       <Contact />
       <Footer />
 
