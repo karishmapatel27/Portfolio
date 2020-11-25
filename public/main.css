@@ -195,8 +195,8 @@ section .title::after{
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
+    font-size: 20px;
+    padding: 10px 30px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
@@ -206,6 +206,13 @@ section .title::after{
 .home .home-content a:hover{
     color: crimson;
     background: none;
+}
+
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    margin-bottom: 1.25rem;
+    background: crimson;
 }
 
 /* about section styling */
@@ -454,6 +461,21 @@ footer{
     color: crimson;
     text-decoration: none;
 }
+
+.social-link {
+    font-size: 1.75rem;
+    color: white;
+    transition: all 0.3s linear;
+    padding: 0.7rem;
+}
+.social-link:hover {
+    color: crimson;
+}
+
+.social-media-links{
+    margin: 2rem;
+}
+
 
 /* responsive media query start */
 @media (max-width: 1300px) {
