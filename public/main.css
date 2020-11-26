@@ -76,55 +76,6 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-}
-.navbar.sticky{
-    padding: 15px 0;
-    background: crimson;
-}
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
-}
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a{
-    display: block;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: crimson;
-}
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
-
 /* menu btn styling */
 .menu-btn{
     color: #fff;
@@ -132,35 +83,37 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
-.scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    background: crimson;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    border-bottom-width: 2px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-.scroll-up-btn.show{
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
-}
-.scroll-up-btn:hover{
-    filter: brightness(90%);
+
+.scrollTop {
+position: fixed; 
+width: 100%;
+bottom: 180px;
+left: 46.5%;
+align-items: center;
+height: 20px;
+justify-content: center;
+z-index: 1000;
+cursor: pointer;
+animation: fadeIn 0.3s;
+transition: opacity 0.4s;
+opacity: 0.8;
+color: crimson;
 }
 
-  
+.scrollTop:hover{
+opacity: 1;
+}
+
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 0.5;
+}
+}
+
+ 
 /* home section styling */
 .home{
     display: flex;
@@ -195,17 +148,26 @@ section .title::after{
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 20px;
     margin-top: 20px;
-    font-weight: 400;
-    border-radius: 6px;
+    border-radius: 0.25rem;
     border: 2px solid crimson;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
 }
 .home .home-content a:hover{
     color: crimson;
     background: none;
+}
+
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    margin-bottom: 1.25rem;
+    background: crimson;
 }
 
 /* about section styling */
@@ -239,13 +201,15 @@ section .title::after{
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
-    padding: 10px 30px;
+    padding: 6px 20px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 0.25rem;
     border: 2px solid crimson;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
 }
 .about .about-content .right a:hover{
     color: crimson;
@@ -274,11 +238,11 @@ section .title::after{
 } */
 
 .projects .project-content .left{
-    width: 45%;
+    width: 50%;
 }
 
 .projects .project-content .right{
-    width: 55%;
+    width: 50%;
 }
 
 .projects .project-content .left img{
@@ -287,11 +251,9 @@ section .title::after{
     object-fit: cover;
     border-radius: 6px;
 }
-
 .projects .project-content .right p{
     text-align: justify;
 }
-
 .projects .project-content .right .project-info {
 background: #fff; 
 padding: 1rem 2rem;
@@ -348,7 +310,7 @@ color: crimson;
 
 /* contact section styling */
 .contact .title::after{
-    content: "get in touch";
+    content: "let's connect";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -423,20 +385,21 @@ color: crimson;
 }
 .contact .right form .button{
     height: 47px;
-    width: 170px;
+    width: 190px;
 }
 .contact .right form .button button{
-    width: 100%;
-    height: 100%;
-    border: 2px solid crimson;
+    display: inline-block;
     background: crimson;
     color: #fff;
-    outline: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    padding: 6px 20px;
+    margin-top: 20px;
+    border-radius: 0.25rem;
+    border: 2px solid crimson;
+    transition: all 0.5s ease;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
 }
 .contact .right form .button button:hover{
     color: crimson;
@@ -446,7 +409,7 @@ color: crimson;
 /* footer section styling */
 footer{
     background: #111;
-    padding: 15px 23px;
+    padding: 20px 23px;
     color: #fff;
     text-align: center;
 }
@@ -454,6 +417,21 @@ footer{
     color: crimson;
     text-decoration: none;
 }
+
+.social-link {
+    font-size: 1.75rem;
+    color: white;
+    transition: all 0.3s linear;
+    padding: 0.7rem;
+}
+.social-link:hover {
+    color: crimson;
+}
+
+.social-media-links{
+    margin: 2rem;
+}
+
 
 /* responsive media query start */
 @media (max-width: 1300px) {
@@ -537,6 +515,8 @@ footer{
     .projects .project-content .left img{
     height: 20.5rem;
     }
+
+    
 }
 
 @media (max-width: 690px) {
@@ -574,13 +554,9 @@ footer{
     .contact .right form .email{
         margin: 0;
     }
-    .scroll-up-btn{
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 35px;
-        font-size: 23px;
-        line-height: 38px;
+    .scrollTop {
+        left: 43%;
+        bottom: 190px;
     }
     .project-stack span {
         font-size: 0.60rem;
@@ -600,6 +576,5 @@ footer{
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
-}
-
+    }
 }

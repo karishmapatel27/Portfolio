@@ -17,11 +17,11 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
       <div className="max-width">
-        <h2 className="title">Contact me</h2>
+        <h2 className="title">Get In Touch</h2>
         <div className="contact-content">
           <div className="column left">
-            <div className="text">Get in Touch</div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+            <div className="text">Let's Work Together.</div>
+            <p>Please fill out the form and I will get back to as soon as I can. I look forward to hearing from you. </p>
             <div className="icons">
               <div className="row">
                 <i className="fas fa-user"></i>
@@ -57,7 +57,7 @@ const Contact = () => {
                 <textarea cols="30" rows="10" placeholder="Message.." required name="message"></textarea>
               </div>
               <div className="button">
-                <button type="submit">Send message</button>
+                <button type="submit">SEND MESSAGE</button>
               </div>
             </form>
           </div>
