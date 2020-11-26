@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Span } from './NavbarElements'
 
 const Navbar = ({ toggle }) => {
+  const [navbar, setNavbar] = useState(false)
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true)
+    }
+    else {
+      setNavbar(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeBackground);
+
   return (
     <>
-      <Nav>
+      <Nav className={navbar ? "active" : ""}>
         <NavbarContainer>
-          <NavLogo to='/'>Portfo<Span>lio.</Span></NavLogo>
+          <NavLogo to='/'>Portfo<Span className={navbar ? "active" : ""}>lio.</Span></NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

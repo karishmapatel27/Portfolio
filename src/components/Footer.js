@@ -1,7 +1,6 @@
 import React from 'react'
 import {
-  FaLinkedin,
-  FaFontAwesome,
+  FaLinkedin
 } from "react-icons/fa"
 import { GoMarkGithub } from 'react-icons/go'
 

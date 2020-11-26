@@ -13,7 +13,7 @@ const HeroSection = () => {
             Karishma Patel</div>
           <div className="text-3">
             And I'm a <span className="typing">Web Developer</span></div>
-          <Link to="projects">View my work</Link>
+          <Link to="contact">CONTACT ME</Link>
         </div>
       </div>
     </section>

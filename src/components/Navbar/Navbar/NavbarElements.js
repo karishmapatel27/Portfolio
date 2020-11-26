@@ -9,14 +9,21 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: sticky; 
+  padding: 50px 0;
   top: 0;
   z-index: 10;
+  transition: 0.8s all ease;
   
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;
   }
+
+  &.active{
+      padding: 30px 0;
+      background: crimson;
+    }
 `
 
 export const NavbarContainer = styled.div`
@@ -26,14 +33,14 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1300px;
 `
 
 export const NavLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 35px;
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -44,6 +51,10 @@ export const NavLogo = styled(LinkR)`
 export const Span = styled.span`
   color: crimson;
   transition: all 0.3s ease;
+
+  &.active{
+      color: #111;
+    }
 `
 
 export const MobileIcon = styled.div`
@@ -87,9 +98,16 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer; 
 
     &.active{
-      border-bottom: 3px solid green;
+      border-bottom: 3px solid red;
+    }
+
+    &:hover {
+      color: crimson;
+      transition: 0.9s all ease;
     }
   `
+
+
 
 
 
