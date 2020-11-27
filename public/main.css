@@ -6,6 +6,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+  ;
+}
+
+h2 {
+    color: #46484d;
 }
 html{
     scroll-behavior: smooth;
@@ -62,7 +67,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: #8c64cf;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -70,7 +75,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #d06075;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -97,7 +102,7 @@ cursor: pointer;
 animation: fadeIn 0.3s;
 transition: opacity 0.4s;
 opacity: 0.8;
-color: crimson;
+color: #d06075;
 }
 
 .scrollTop:hover{
@@ -117,9 +122,9 @@ opacity: 1;
 /* home section styling */
 .home{
     display: flex;
-    background-color: black;
+    background-color:#ebe8e7;
     height: 100vh;
-    color: #fff;
+    color:#46484d;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -141,25 +146,25 @@ opacity: 1;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: #8c64cf;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background: #d06075;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
     padding: 6px 20px;
     margin-top: 20px;
     border-radius: 0.25rem;
-    border: 2px solid crimson;
+    border: 2px solid #d06075;
     transition: all 0.5s ease;
     word-spacing: 3px;
     letter-spacing: 1.5px;
 }
 .home .home-content a:hover{
-    color: crimson;
+    color: #d06075;
     background: none;
 }
 
@@ -167,7 +172,7 @@ opacity: 1;
     width: 5rem;
     height: 0.25rem;
     margin-bottom: 1.25rem;
-    background: crimson;
+    background: #d06075;
 }
 
 /* about section styling */
@@ -192,27 +197,27 @@ opacity: 1;
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: #d06075;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background:#d06075;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
     padding: 6px 20px;
     margin-top: 20px;
     border-radius: 0.25rem;
-    border: 2px solid crimson;
+    border: 2px solid#d06075;
     transition: all 0.5s ease;
     word-spacing: 3px;
     letter-spacing: 1.5px;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: #d06075;
     background: none;
 }
 
@@ -220,17 +225,17 @@ opacity: 1;
 /* projects section styling */
 
 .projects .title::before{
-    background: #fff;
+    background: #8c64cf;
 }
 
 .projects .title::after{
-    background: #111;
+    background:#ebe8e7;
     content: "My Work";
 }
 
 .projects {
-    color:#fff;
-    background: #111;
+    color:#9599a0;
+    background: #ebe8e7;
 }
 
 /* .project-content{
@@ -264,7 +269,7 @@ border-bottom-right-radius: 0.25rem;
 .project-number {
 display: inline-block;
 font-size: 1.25rem;
-color: crimson;
+color: #d06075;
 margin-bottom: 0.75rem;
 }
 
@@ -272,7 +277,7 @@ margin-bottom: 0.75rem;
 font-weight: 500;
 margin-bottom: 1.5rem;
 font-size: 1.5rem;
-color: black;
+color: #8c64cf;
 }
 
 .project-desc {
@@ -298,13 +303,13 @@ font-size: 0.85rem;
 }
 
 .project-icon {
-color: hsl(210, 22%, 49%);
+color: #8c64cf;
 font-size: 1.25rem;
 margin-right: 0.5rem;
 transition: all 0.3s linear;
 }
 .project-icon:hover {
-color: crimson;
+color: #f2c76e;
 }
 
 
@@ -319,6 +324,7 @@ color: crimson;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #8c64cf;
 }
 .contact .contact-content .left p{
     text-align: justify;
@@ -336,7 +342,7 @@ color: crimson;
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #d06075;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -389,32 +395,32 @@ color: crimson;
 }
 .contact .right form .button button{
     display: inline-block;
-    background: crimson;
+    background: #d06075;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
     padding: 6px 20px;
     margin-top: 20px;
     border-radius: 0.25rem;
-    border: 2px solid crimson;
+    border: 2px solid #d06075;
     transition: all 0.5s ease;
     word-spacing: 3px;
     letter-spacing: 1.5px;
 }
 .contact .right form .button button:hover{
-    color: crimson;
+    color: #d06075;
     background: none;
 }
 
 /* footer section styling */
 footer{
-    background: #111;
+    background:#f2c76e;
     padding: 20px 23px;
     color: #fff;
     text-align: center;
 }
 .footer-name{
-    color: crimson;
+    color: #8c64cf;
     text-decoration: none;
 }
 
@@ -425,7 +431,7 @@ footer{
     padding: 0.7rem;
 }
 .social-link:hover {
-    color: crimson;
+    color:#d06075;
 }
 
 .social-media-links{

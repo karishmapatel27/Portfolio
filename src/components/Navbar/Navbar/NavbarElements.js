@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 
 export const Nav = styled.nav`
-  background: #000;
+  background: #f2c76e;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@ export const Nav = styled.nav`
 
   &.active{
       padding: 30px 0;
-      background: crimson;
+      background: #d06075;
     }
 `
 
@@ -49,11 +49,11 @@ export const NavLogo = styled(LinkR)`
 `
 
 export const Span = styled.span`
-  color: crimson;
+  color: #8c64cf;
   transition: all 0.3s ease;
 
   &.active{
-      color: #111;
+      color:  #f2c76e;
     }
 `
 
@@ -97,13 +97,9 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer; 
 
-    &.active{
-      border-bottom: 3px solid red;
-    }
-
     &:hover {
-      color: crimson;
-      transition: 0.9s all ease;
+      color: #8c64cf;
+      transition: 0.7s all ease;
     }
   `
 
