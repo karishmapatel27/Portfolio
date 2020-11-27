@@ -10,7 +10,7 @@
 }
 
 h2 {
-    color: #46484d;
+    color: #000527;
 }
 html{
     scroll-behavior: smooth;
@@ -67,7 +67,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #8c64cf;
+    background: white;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -122,9 +122,9 @@ opacity: 1;
 /* home section styling */
 .home{
     display: flex;
-    background-color:#ebe8e7;
+    background-color:#000527;
     height: 100vh;
-    color:#46484d;
+    color:white;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -146,7 +146,7 @@ opacity: 1;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #8c64cf;
+    color: #ab85ec;
     font-weight: 500;
 }
 .home .home-content a{
