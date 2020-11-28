@@ -6,11 +6,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-  ;
 }
 
 h2 {
-    color: #000527;
+    color: #111;
 }
 html{
     scroll-behavior: smooth;
@@ -67,7 +66,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: white;
+    background: #111;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -75,11 +74,13 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #d06075;
+    color: #DE0013;
     padding: 0 5px;
-    background: #fff;
+    background: #111;
     transform: translateX(-50%);
 }
+
+
 
 /* menu btn styling */
 .menu-btn{
@@ -92,7 +93,7 @@ section .title::after{
 .scrollTop {
 position: fixed; 
 width: 100%;
-bottom: 180px;
+bottom: 50px;
 left: 46.5%;
 align-items: center;
 height: 20px;
@@ -102,7 +103,7 @@ cursor: pointer;
 animation: fadeIn 0.3s;
 transition: opacity 0.4s;
 opacity: 0.8;
-color: #d06075;
+color: #DE0013;
 }
 
 .scrollTop:hover{
@@ -122,9 +123,9 @@ opacity: 1;
 /* home section styling */
 .home{
     display: flex;
-    background-color:#000527;
+    background-color:white;
     height: 100vh;
-    color:white;
+    color:#111;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -146,38 +147,44 @@ opacity: 1;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #ab85ec;
+    color:#DE0013;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: #d06075;
+    background: #DE0013;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
     padding: 6px 20px;
     margin-top: 20px;
     border-radius: 0.25rem;
-    border: 2px solid #d06075;
+    border: 2px solid #DE0013;
     transition: all 0.5s ease;
     word-spacing: 3px;
     letter-spacing: 1.5px;
 }
 .home .home-content a:hover{
-    color: #d06075;
-    background: none;
+    color: #111;
+    background: #fff;
+    transition: ease all 0.8s;
 }
 
 .underline {
     width: 5rem;
     height: 0.25rem;
     margin-bottom: 1.25rem;
-    background: #d06075;
+    background: #111;
 }
 
 /* about section styling */
+.about{
+    background: #F3F1F0;
+}
 .about .title::after{
     content: "who i am";
+    background: #F3F1F0;
+    color: #DE0013;
 }
 .about .about-content .left{
     width: 45%;
@@ -197,27 +204,27 @@ opacity: 1;
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: #d06075;
+    color: #DE0013;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background:#d06075;
+    background:#DE0013;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
     padding: 6px 20px;
     margin-top: 20px;
     border-radius: 0.25rem;
-    border: 2px solid#d06075;
+    border: 2px solid #DE0013;
     transition: all 0.5s ease;
     word-spacing: 3px;
     letter-spacing: 1.5px;
 }
 .about .about-content .right a:hover{
-    color: #d06075;
+    color: #111;
     background: none;
 }
 
@@ -225,22 +232,18 @@ opacity: 1;
 /* projects section styling */
 
 .projects .title::before{
-    background: #8c64cf;
+    background: #111;
 }
 
 .projects .title::after{
-    background:#ebe8e7;
+    background:#fff;
     content: "My Work";
 }
 
 .projects {
     color:#9599a0;
-    background: #ebe8e7;
+    background: #fff;
 }
-
-/* .project-content{
-    display: flex;
-} */
 
 .projects .project-content .left{
     width: 50%;
@@ -251,25 +254,26 @@ opacity: 1;
 }
 
 .projects .project-content .left img{
-    /* height: 18rem; */
     height: 25rem;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 0.25rem;
+    z-index: 1;
 }
+
 .projects .project-content .right p{
     text-align: justify;
 }
 .projects .project-content .right .project-info {
-background: #fff; 
-padding: 1rem 2rem;
-border-bottom-left-radius: 0.25rem;
-border-bottom-right-radius: 0.25rem;
+    background: #fff; 
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    position: relative;
 }
 
 .project-number {
 display: inline-block;
 font-size: 1.25rem;
-color: #d06075;
+color: #DE0013;
 margin-bottom: 0.75rem;
 }
 
@@ -277,7 +281,7 @@ margin-bottom: 0.75rem;
 font-weight: 500;
 margin-bottom: 1.5rem;
 font-size: 1.5rem;
-color: #8c64cf;
+color: #111;
 }
 
 .project-desc {
@@ -303,19 +307,23 @@ font-size: 0.85rem;
 }
 
 .project-icon {
-color: #8c64cf;
+color: #DE0013;
 font-size: 1.25rem;
 margin-right: 0.5rem;
 transition: all 0.3s linear;
 }
 .project-icon:hover {
-color: #f2c76e;
+color: #ee1022;
 }
 
 
 /* contact section styling */
+.contact{
+    background: #F3F1F0;
+}
 .contact .title::after{
     content: "let's connect";
+    background: #F3F1F0;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -324,7 +332,7 @@ color: #f2c76e;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #8c64cf;
+    color: #111;
 }
 .contact .contact-content .left p{
     text-align: justify;
@@ -342,7 +350,7 @@ color: #f2c76e;
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: #d06075;
+    color: #DE0013;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -395,43 +403,50 @@ color: #f2c76e;
 }
 .contact .right form .button button{
     display: inline-block;
-    background: #d06075;
+    background: #DE0013;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
     padding: 6px 20px;
     margin-top: 20px;
     border-radius: 0.25rem;
-    border: 2px solid #d06075;
+    border: 2px solid #DE0013;
     transition: all 0.5s ease;
     word-spacing: 3px;
     letter-spacing: 1.5px;
 }
 .contact .right form .button button:hover{
-    color: #d06075;
+    color: #111;
     background: none;
 }
 
 /* footer section styling */
 footer{
-    background:#f2c76e;
-    padding: 20px 23px;
-    color: #fff;
+    background:#F3F1F0;
+    padding: 30px 23px;
+    color: #111;
     text-align: center;
 }
+.line{
+    width: 70%;
+    height: 0px;
+    margin: 0 15% 0 15%;
+    border-bottom: 0.5px solid rgb(201, 198, 198);
+    position: absolute;
+}
 .footer-name{
-    color: #8c64cf;
+    color: #DE0013;
     text-decoration: none;
 }
 
 .social-link {
     font-size: 1.75rem;
-    color: white;
+    color: #DE0013;
     transition: all 0.3s linear;
     padding: 0.7rem;
 }
 .social-link:hover {
-    color:#d06075;
+    color: #ee1022;
 }
 
 .social-media-links{
