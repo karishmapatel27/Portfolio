@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 
 export const Nav = styled.nav`
-  background: #000;
+  background: white;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -14,15 +14,16 @@ export const Nav = styled.nav`
   padding: 50px 0;
   top: 0;
   z-index: 10;
-  transition: 0.8s all ease;
+  transition: 0.9s all ease;
   
   @media screen and (max-width: 960px){
-    transition: 0.8s all ease;
+    transition: 0.9s all ease;
   }
 
   &.active{
-      padding: 30px 0;
-      background: crimson;
+      padding: 50px 0 60px 0;
+      background: #111;
+      opacity: 0.9;
     }
 `
 
@@ -37,24 +38,16 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 35px;
   display: flex;
   align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 2.5%;
 `
 
-export const Span = styled.span`
-  color: crimson;
-  transition: all 0.3s ease;
-
-  &.active{
-      color: #111;
-    }
+export const Img = styled.img`
+  width: 190px;
 `
 
 export const MobileIcon = styled.div`
@@ -63,11 +56,15 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 768px){
     display: block;
     position: absolute;
-    top: 0;
+    top: 13.5px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: #111;
+  }
+
+  &.active{
     color: #fff;
   }
 `
@@ -82,6 +79,7 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 768px){
     display: none; 
   }
+
 `
 
 export const NavItem = styled.li`
@@ -89,21 +87,26 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-    color: #fff;
+    color: #111;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     height: 100%;
     cursor: pointer; 
-
-    &.active{
-      border-bottom: 3px solid red;
-    }
+    font-weight: lighter;
 
     &:hover {
-      color: crimson;
-      transition: 0.9s all ease;
+      color: #DE0013;
+      transition: 0.7s all ease;
+    }
+
+    &.active {
+      color: white;
+
+      &:hover{
+        color: #DE0013;
+      }
     }
   `
 

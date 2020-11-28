@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Span } from './NavbarElements'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Img } from './NavbarElements'
 
 const Navbar = ({ toggle }) => {
   const [navbar, setNavbar] = useState(false)
+  const [logo, setLogo] = useState(false)
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -16,26 +17,36 @@ const Navbar = ({ toggle }) => {
 
   window.addEventListener('scroll', changeBackground);
 
+  const changeLogo = () => {
+    if (window.scrollY >= 80) {
+      setLogo(true)
+    } else {
+      setLogo(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeLogo)
+
   return (
     <>
       <Nav className={navbar ? "active" : ""}>
         <NavbarContainer>
-          <NavLogo to='/'>Portfo<Span className={navbar ? "active" : ""}>lio.</Span></NavLogo>
-          <MobileIcon onClick={toggle}>
+          <NavLogo to='/'> <Img src={logo ? "white-logo.png" : "smll-logo.png"} alt="profile" /></NavLogo>
+          <MobileIcon onClick={toggle} className={navbar ? "active" : ""}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="home" >Home</NavLinks>
+              <NavLinks to="home" className={navbar ? "active" : ""} >HOME</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about" >About</NavLinks>
+              <NavLinks to="about" className={navbar ? "active" : ""} >ABOUT</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="projects" >Projects</NavLinks>
+              <NavLinks to="projects" className={navbar ? "active" : ""} >PROJECTS</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact" >Contact</NavLinks>
+              <NavLinks to="contact" className={navbar ? "active" : ""} >CONTACT</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
