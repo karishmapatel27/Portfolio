@@ -134,6 +134,7 @@ opacity: 1;
 .home .max-width{
     margin: auto 0 auto 30px;
 }
+
 .home .home-content .text-1{
     font-size: 27px;
 }
@@ -167,7 +168,7 @@ opacity: 1;
 .home .home-content a:hover{
     color: #111;
     background: #fff;
-    transition: ease all 0.8s;
+    transition: all 0.5s ease-out;
 }
 
 .underline {
@@ -226,6 +227,7 @@ opacity: 1;
 .about .about-content .right a:hover{
     color: #111;
     background: none;
+    transition: all 0.5s ease-out;
 }
 
 
@@ -254,10 +256,18 @@ opacity: 1;
 }
 
 .projects .project-content .left img{
-    height: 25rem;
+    height: 30rem;
+    width: 140%;
     object-fit: cover;
     border-radius: 0.25rem;
     z-index: 1;
+    transition: all 0.4s linear;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.projects .project-content .left img:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
 }
 
 .projects .project-content .right p{
@@ -268,6 +278,7 @@ opacity: 1;
     padding: 1rem 2rem;
     border-radius: 0.25rem;
     position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .project-number {
@@ -418,6 +429,7 @@ color: #ee1022;
 .contact .right form .button button:hover{
     color: #111;
     background: none;
+    transition: all 0.5s ease-out;
 }
 
 /* footer section styling */
@@ -535,6 +547,7 @@ footer{
     }
     .projects .project-content .left img{
     height: 20.5rem;
+    width: 100%;
     }
 
     
@@ -552,6 +565,10 @@ footer{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .projects .project-content .left img{
+    height: 20.5rem;
+    width: 100%;
     }
 
 }
