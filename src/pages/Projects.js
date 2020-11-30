@@ -16,11 +16,17 @@ const Projects = () => {
               <span className="project-number">01</span>
               <h3>Give Me</h3>
               <p className="project-desc">
-                Give me is a platform that enables kiwis to list the unwanted items that they wish to donate.</p>
+                GiveMe is the final project that I created with an exceptional team and presented at our Bootcamp's graduation. As a team, we created a platform that enables kiwis to donate unwanted goods. User can list unwanted items and person interested in that item can then get the contact details of the lister.</p>
               <div className="project-stack">
                 <span>React</span>
                 <span>React hooks</span>
+                <span>React Context</span>
                 <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Authenticare</span>
+                <span>SQLite3</span>
+                <span>Knex.js</span>
               </div>
               <div className="project-links">
                 <a href="https://github.com/karishmapatel27/GiveMe" rel="noreferrer" target="_blank">

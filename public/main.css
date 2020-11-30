@@ -64,12 +64,44 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 220px;
     height: 3px;
     background: #111;
     transform: translateX(-50%);
 }
+
 section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #DE0013;
+    padding: 0 5px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title1{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title1::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 350px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title1::after{
     position: absolute;
     bottom: -8px;
     left: 50%;
@@ -182,8 +214,8 @@ opacity: 1;
 .about{
     background: #F3F1F0;
 }
-.about .title::after{
-    content: "who i am";
+.about .title1::after{
+    content: "Allow me to introduce myself";
     background: #F3F1F0;
     color: #DE0013;
 }
@@ -239,7 +271,7 @@ opacity: 1;
 
 .projects .title::after{
     background:#fff;
-    content: "My Work";
+    content: "Explore My Work";
 }
 
 .projects {
@@ -296,21 +328,23 @@ color: #111;
 }
 
 .project-desc {
-word-spacing: 4px;
+word-spacing: 2.3px;
 color: hsl(209, 34%, 30%);
 }
 
 .project-stack {
 margin-top: 0.5rem;
 margin-bottom: 1rem;
+padding: 5px 0 5px 0;
 }
 
 .project-stack span {
 display: inline-block;
 background: hsl(212, 33%, 89%);
 color: hsl(210, 22%, 49%);
-margin-right: 0.5rem;
-padding: 0.25rem 0.5rem;
+margin: 0.25rem 0.25rem 0.25rem 0;
+padding: 0.25rem 0.25rem; 
+
 border-radius: 0.25rem;
 text-transform: uppercase;
 letter-spacing: 2px;
