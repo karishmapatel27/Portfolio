@@ -32,7 +32,7 @@ const Projects = () => {
                 <a href="https://github.com/karishmapatel27/GiveMe" rel="noreferrer" target="_blank">
                   <FaGithubSquare className="project-icon" />
                 </a>
-                <a href="https://github.com/karishmapatel27/GiveMe">
+                <a href="https://drive.google.com/drive/u/0/folders/1f3TY8kDdCTzc9HU-e31EpgbQG21L4ita">
                   <FaShareSquare className="project-icon" />
                 </a>
               </div>
