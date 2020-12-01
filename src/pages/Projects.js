@@ -50,11 +50,15 @@ const Projects = () => {
               <span className="project-number">02</span>
               <h3>Tell Story</h3>
               <p className="project-desc">
-                Tell Story is a project inspired by game mad libs.</p>
+                TellStory is a simple and entertaining story generator game, based on an Idea given by our awesome team member. We created this game on the last day of week three of our Bootcamp. <br /><br />
+                We created this game to practise newly learnt skills within the dev environment. It takes an input, stores it in a database table, then display the last input while also recording the new input. It then merges all the inputs to generate the story.</p><br />
               <div className="project-stack">
-                <span>React</span>
-                <span>React hooks</span>
+                <span>Express-Handlebars</span>
+                <span>Express.js</span>
                 <span>JavaScript</span>
+                <span>Knex.js</span>
+                <span>SQLite3</span>
+                <span>CSS</span>
               </div>
               <div className="project-links">
                 <a href="https://github.com/karishmapatel27/TellStory" rel="noreferrer" target="_blank">
