@@ -32,7 +32,7 @@ const Projects = () => {
                 <a href="https://github.com/karishmapatel27/GiveMe" rel="noreferrer" target="_blank">
                   <FaGithubSquare className="project-icon" />
                 </a>
-                <a href="https://drive.google.com/drive/u/0/folders/1f3TY8kDdCTzc9HU-e31EpgbQG21L4ita">
+                <a href="https://drive.google.com/file/d/1fX2vbLq852UVHxss63W_1r4LnqQAGBfm/view">
                   <FaShareSquare className="project-icon" />
                 </a>
               </div>
@@ -50,8 +50,8 @@ const Projects = () => {
               <span className="project-number">02</span>
               <h3>Tell Story</h3>
               <p className="project-desc">
-                TellStory is a simple and entertaining story generator game, based on an Idea given by our awesome team member. We created this game on the last day of week three of our Bootcamp. <br /><br />
-                We created this game to practise newly learnt skills within the dev environment. It takes an input, stores it in a database table, then display the last input while also recording the new input. It then merges all the inputs to generate the story.</p><br />
+                TellStory is a simple and entertaining story generator game, based on an idea given by our team member. This game was our Friday project of week three in Bootcamp.<br /><br />
+                This game was our way to practise newly learnt skills such as RDBMS and Knex.js.</p>
               <div className="project-stack">
                 <span>Express-Handlebars</span>
                 <span>Express.js</span>
@@ -82,11 +82,14 @@ const Projects = () => {
               <span className="project-number">03</span>
               <h3>Meme Generator</h3>
               <p className="project-desc">
-                The Meme Generator, project we created during week five of our bootcamp.</p>
+                This is a single-day project where our team decided to create a meme builder website. We built his project to test out knowledge on React and React router. To add some humour, we decided to use images of our teachers and students from EDA.</p>
               <div className="project-stack">
                 <span>React</span>
-                <span>React hooks</span>
-                <span>JavaScript</span>
+                <span>React Router</span>
+                <span>Canvas</span>
+                <span>Javascript</span>
+                <span>CSS</span>
+                <span>HTML</span>
               </div>
               <div className="project-links">
                 <a href="https://github.com/karishmapatel27/MKMKG_limited_org" rel="noreferrer" target="_blank">
