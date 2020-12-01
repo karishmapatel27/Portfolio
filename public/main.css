@@ -164,8 +164,25 @@ opacity: 1;
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
-    margin: auto 0 auto 30px;
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-left:0px;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both; 
 }
+
+@keyframes example {
+0% {
+    transform: translatex(-700px);
+    }
+100% {
+    transform: translatex(30px);
+    }
+}  
 
 .home .home-content .text-1{
     font-size: 27px;
