@@ -16,7 +16,7 @@ const Projects = () => {
               <span className="project-number">01</span>
               <h3>Give Me</h3>
               <p className="project-desc">
-                GiveMe is the final project that I created with an exceptional team and presented at our Bootcamp's graduation. As a team, we created a platform that enables kiwis to donate unwanted goods. User can list unwanted items and person interested in that item can then get the contact details of the lister.</p>
+                GiveMe is the final project that I created with an exceptional team and presented at our Bootcamp's graduation. As a team, we created a platform that enables kiwis to donate unwanted goods. User can list unwanted items and person interested in that item can then get the contact details of the product owner.</p>
               <div className="project-stack">
                 <span>React</span>
                 <span>React hooks</span>
