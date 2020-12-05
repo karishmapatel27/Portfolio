@@ -106,18 +106,18 @@ const Projects = () => {
         <br />
         <div className="project-content">
           <div className="column left">
-            <img src="meme-generator.png" alt="profile" />
+            <img src="weather_app.png" alt="profile" />
           </div>
           <div className="column right">
             <div className="project-info">
               <span className="project-number">04</span>
-              <h3>WhetherPerson</h3>
+              <h3>WeatherPerson</h3>
               <p className="project-desc">
-                The Meme Generator, project we created during week five of our bootcamp.</p>
+                The simple weather app was created in week five of out Bootcamp to practice React and API.</p>
               <div className="project-stack">
                 <span>React</span>
-                <span>React hooks</span>
                 <span>JavaScript</span>
+                <span>CSS</span>
               </div>
               <div className="project-links">
                 <a href="https://github.com/karishmapatel27/WhetherPerson" rel="noreferrer" target="_blank">
@@ -141,11 +141,13 @@ const Projects = () => {
               <span className="project-number">05</span>
               <h3>Netflix Clone</h3>
               <p className="project-desc">
-                The Meme Generator, project we created during week five of our bootcamp.</p>
+                This is a Netflix clone I created to practice React and API.</p>
               <div className="project-stack">
                 <span>React</span>
                 <span>React hooks</span>
                 <span>JavaScript</span>
+                <span>Axios</span>
+                <span>CSS</span>
               </div>
               <div className="project-links">
                 <a href="https://github.com/karishmapatel27/netflix_clone" rel="noreferrer" target="_blank">
