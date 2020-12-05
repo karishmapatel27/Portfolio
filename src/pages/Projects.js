@@ -123,7 +123,7 @@ const Projects = () => {
                 <a href="https://github.com/karishmapatel27/WhetherPerson" rel="noreferrer" target="_blank">
                   <FaGithubSquare className="project-icon" />
                 </a>
-                <a href="https://react-meme-builder.netlify.app/#/" rel="noreferrer" target="_blank" >
+                <a href="https://weather--app-2020.herokuapp.com/" rel="noreferrer" target="_blank" >
                   <FaShareSquare className="project-icon" />
                 </a>
               </div>
