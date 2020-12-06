@@ -95,7 +95,7 @@ section .title1::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 350px;
+    width: 220px;
     height: 3px;
     background: #111;
     transform: translateX(-50%);
@@ -140,6 +140,7 @@ color: #DE0013;
 
 .scrollTop:hover{
 opacity: 1;
+color: #f72929;
 }
 
 @keyframes fadeIn {
@@ -180,7 +181,7 @@ opacity: 1;
     transform: translatex(-700px);
     }
 100% {
-    transform: translatex(30px);
+    transform: translatex(20px);
     }
 }  
 
@@ -232,7 +233,7 @@ opacity: 1;
     background: #F3F1F0;
 }
 .about .title1::after{
-    content: "Allow me to introduce myself";
+    content: "Get to know me";
     background: #F3F1F0;
     color: #DE0013;
 }
@@ -306,8 +307,8 @@ opacity: 1;
 
 .projects .project-content .left img{
     height: 30rem;
-    width: 140%;
-    object-fit: cover;
+    width: 165%;
+    /* object-fit: cover; */
     border-radius: 0.25rem;
     z-index: 1;
     transition: all 0.4s linear;
@@ -377,7 +378,7 @@ margin-right: 0.5rem;
 transition: all 0.3s linear;
 }
 .project-icon:hover {
-color: #ee1022;
+color: #f72929;
 }
 
 
@@ -511,7 +512,7 @@ footer{
     padding: 0.7rem;
 }
 .social-link:hover {
-    color: #ee1022;
+    color: #f72929;
 }
 
 .social-media-links{
@@ -530,6 +531,16 @@ footer{
     .about .about-content .left img{
         height: 350px;
         width: 350px;
+    }
+    .projects .project-content .left img{
+    height: 26rem;
+    width: 180%;
+    }
+
+    .projects .project-content .right .project-info {
+    width: 110%;
+    min-height:22rem;
+    margin-left: -10%;
     }
 }
 
@@ -575,10 +586,6 @@ footer{
     .home .home-content .text-3{
         font-size: 35px;
     }
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
-    }
     .max-width{
         max-width: 930px;
     }
@@ -602,8 +609,11 @@ footer{
     height: 20.5rem;
     width: 100%;
     }
-
-    
+    .projects .project-content .right .project-info {
+    width: 100%;
+    min-height:22rem;
+    margin-left: 0%; 
+    }
 }
 
 @media (max-width: 690px) {
@@ -616,22 +626,21 @@ footer{
     .home .home-content .text-3{
         font-size: 32px;
     }
-    .home .home-content a{
-        font-size: 20px;
-    }
     .projects .project-content .left img{
     height: 20.5rem;
     width: 100%;
     }
-
 }
 
 @media (max-width: 500px) {
+    .home .home-content .text-1{
+        font-size: 22px;
+    }
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 40px;
     }
     .home .home-content .text-3{
-        font-size: 27px;
+        font-size: 22px;
     }
     .about .about-content .right .text
     {
@@ -646,7 +655,7 @@ footer{
         margin: 0;
     }
     .scrollTop {
-        left: 43%;
+        left: 40%;
         bottom: 190px;
     }
     .project-stack span {
@@ -663,9 +672,9 @@ footer{
         font-size: 0.90rem;
     }
     .projects .project-content .left img{
-    height: 11.3rem;
+    height: 13rem;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 6px;
     }
 }
