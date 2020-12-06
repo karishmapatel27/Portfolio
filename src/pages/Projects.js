@@ -16,7 +16,7 @@ const Projects = () => {
               <span className="project-number">01</span>
               <h3>Give Me</h3>
               <p className="project-desc">
-                GiveMe is the final project that I created with an exceptional team and presented at our Bootcamp's graduation. As a team, we created a platform that enables kiwis to donate unwanted goods. User can list unwanted items and person interested in that item can then get the contact details of the product owner.</p>
+                GiveMe is the final project that I created with an exceptional team and presented at our bootcamp's graduation. As a team, we created a platform that enables kiwis to donate unwanted goods. User can list unwanted items and person interested in that item can then get the contact details of the product owner.</p>
               <div className="project-stack">
                 <span>React hooks</span>
                 <span>React Context</span>
@@ -48,7 +48,7 @@ const Projects = () => {
               <span className="project-number">02</span>
               <h3>Tell Story</h3>
               <p className="project-desc">
-                TellStory is a simple and entertaining story generator game, based on an idea given by our team member. This game was our Friday project of week three in Bootcamp.<br />
+                TellStory is a simple and entertaining story generator game, based on an idea given by our team member. This game was our Friday project of week three in bootcamp.<br />
                 This game was our way to practise newly learnt skills such as RDBMS, Knex.js and Handlebars.</p>
               <div className="project-stack">
                 <span>Express-Handlebars</span>
@@ -87,7 +87,7 @@ const Projects = () => {
                 <span>Canvas</span>
                 <span>Javascript</span>
                 <span>CSS</span>
-                <spa>semantic-ui</spa>
+                <span>semantic-ui</span>
                 <span>HTML</span>
               </div>
               <div className="project-links">
