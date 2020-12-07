@@ -20,7 +20,7 @@ const Footer = () => {
             <GoMarkGithub />
           </a>
         </div>
-        <span>Created By <span className="footer-name">Karishma Patel</span> | <span className="far fa-copyright"></span> 2020 All rights reserved.</span>
+        <span>Created by <span className="footer-name">Karishma Patel</span> | <span className="far fa-copyright"></span> 2020 All rights reserved.</span>
       </footer>
     </>
   )
