@@ -18,7 +18,7 @@ const About = () => {
               After finishing my bachelor's degree, I went to study a Bachelor of Nursing at the University of Auckland for about a year and a half. This small self-exploration journey taught me many valuable skills, but most importantly, it made me realise my love and passion for coding.  <br /><br />
               This portfolio is a representation of the skills that I gained during 15 weeks of coding Bootcamp, and I'm now polishing the existing skills as well as learning new technologies to grow myself as a full-stack developer. I call myself a forever student; it's because I am always hungry to expand my knowledge and hone my skills. The challenges that come with learning excites me and keep me motivated. <br /><br />
               Alongside this, I am very fond of food and socialising, so I enjoy cooking, meeting my friends over coffee/drink and spending some quality time with family.</p><br />
-            <a target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1plcgzPV7b9ZyHljyh_QyPJ4yhzTu24qF/view">MY RESUME</a>
+            <a target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1YUP_RF2KevQ8f5fk9BeTDCNEZGMRN29Z/view?usp=sharing">MY RESUME</a>
           </div>
         </div>
       </div>
