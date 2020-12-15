@@ -134,11 +134,39 @@ const Projects = () => {
         <br />
         <div className="project-content">
           <div className="column left">
-            <img src="firstwebsite.png" alt="profile" />
+            <img src="Whack-a-mole.png" alt="profile" />
           </div>
           <div className="column right">
             <div className="project-info">
               <span className="project-number">05</span>
+              <h3>Whack a Mole</h3>
+              <p className="project-desc">
+                This is the first game I created during my bootcamp foundation when I was learning JavaScript. </p>
+              <div className="project-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/karishmapatel27/whack-a-mole" rel="noreferrer" target="_blank">
+                  <FaGithubSquare className="project-icon" />
+                </a>
+                <a href="https://drive.google.com/file/d/1xbubNRqE46ddVsb8RQBclT4nJlf2X2Rz/view" rel="noreferrer" target="_blank" >
+                  <FaShareSquare className="project-icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div className="project-content">
+          <div className="column left">
+            <img src="firstwebsite.png" alt="profile" />
+          </div>
+          <div className="column right">
+            <div className="project-info">
+              <span className="project-number">06</span>
               <h3>My First Website</h3>
               <p className="project-desc">
                 My very first website! I built this site suring my bootcamp foundation using HTML and CSS. During development I realised it takes a lotmore then just writing code to create a functional and visualy aesthitic website. It was the beginin of a lifelong journey, and looking back I realise the progress I have made in a few short months. </p>
