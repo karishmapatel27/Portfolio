@@ -12,7 +12,7 @@ const HeroSection = () => {
           <div className="text-2">
             Karishma Patel</div>
           <div className="text-3">
-            And I'm a <span className="typing">Web Developer</span></div>
+            And I'm a <span className="typing">Software Developer</span></div>
           <Link to="contact">CONTACT ME</Link>
         </div>
       </div>
